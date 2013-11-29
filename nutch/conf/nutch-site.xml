@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+   <property>
+       <value>My Nutch Spider</value>
+       <name>http.agent.name</name>
+   </property>
+   <property>
+    	<name>plugin.folders</name>
+    	<value>runtime/local/plugins</value>
+   </property>
+   <property>
+  	<name>plugin.includes</name>
+  	<value>protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)|myPlugin</value>
+  <description>Added myPlugin</description>
+   </property>
+</configuration>

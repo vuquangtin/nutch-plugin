@@ -1,0 +1,734 @@
+2013-10-18 18:18:45,420 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:18:45,730 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:18:45,741 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:18:45
+2013-10-18 18:18:45,741 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:18:45,741 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:18:45,741 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:18:45,782 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:18:45,836 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:18:45,862 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:18:45,871 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:18:46,417 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:18:46,417 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:18:46,418 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:18:46,418 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:18:46,418 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:18:46,418 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:18:46,420 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:20:12,874 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:20:12,991 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:20:12,991 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:20:12,991 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:20:12,992 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:20:12,992 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:20:12,992 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:20:13,002 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:20:13
+2013-10-18 18:20:13,003 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:20:13,003 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:20:13,003 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:20:13,043 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:20:13,098 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:20:13,129 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:20:13,138 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:20:13,720 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:20:13,720 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:20:13,720 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:20:13,720 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:20:13,720 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:20:13,720 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:20:13,722 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:20:25,602 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:20:25,714 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:20:25,729 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:20:25
+2013-10-18 18:20:25,729 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:20:25,729 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:20:25,729 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:20:25,766 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:20:25,828 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:20:25,858 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:20:25,867 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:20:26,446 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:20:26,447 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:20:26,447 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:20:26,447 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:20:26,447 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:20:26,447 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:20:26,449 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:21:23,892 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:21:24,003 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:21:24,013 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:21:24
+2013-10-18 18:21:24,013 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:21:24,014 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:21:24,014 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:21:24,052 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:21:24,114 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:21:24,146 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:21:24,156 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:21:24,711 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:21:24,712 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:21:24,712 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:21:24,712 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:21:24,712 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:21:24,712 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:21:24,714 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:25:08,313 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:25:08,612 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:25:08,622 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:25:08
+2013-10-18 18:25:08,623 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:25:08,623 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:25:08,623 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:25:08,663 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:25:08,717 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:25:08,764 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:25:08,776 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:25:09,319 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:25:09,320 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:25:09,320 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:25:09,320 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:25:09,320 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:25:09,320 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:25:09,322 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:28:59,287 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:28:59,401 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:28:59,401 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:28:59,401 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:28:59,401 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:28:59,401 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:28:59,402 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:28:59,417 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:28:59
+2013-10-18 18:28:59,417 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:28:59,417 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:28:59,418 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:28:59,461 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:28:59,519 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:28:59,547 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:28:59,556 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:29:00,110 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:29:00,111 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:29:00,111 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:29:00,111 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:29:00,111 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:29:00,111 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:29:00,113 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:31:37,045 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:31:37,153 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:31:37,164 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:31:37
+2013-10-18 18:31:37,164 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:31:37,164 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:31:37,164 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:31:37,204 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:31:37,258 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:31:37,288 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:31:37,297 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:31:37,843 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:31:37,844 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:31:37,844 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:31:37,844 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:31:37,844 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:31:37,844 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:31:37,845 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:35:40,099 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:35:40,371 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:35:40,383 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:35:40
+2013-10-18 18:35:40,383 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:35:40,383 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:35:40,383 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:35:40,422 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:35:40,477 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:35:40,502 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:35:40,511 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:35:41,064 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:35:41,064 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:35:41,064 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:35:41,064 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:35:41,064 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:35:41,064 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:35:41,066 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:36:33,738 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:36:33,859 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:36:33,860 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:36:33,860 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:36:33,860 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:36:33,860 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:36:33,860 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:36:33,874 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:36:33
+2013-10-18 18:36:33,874 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:36:33,874 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:36:33,874 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:36:33,912 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:36:33,972 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:36:34,001 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:36:34,009 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:36:34,573 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:36:34,574 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:36:34,574 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:36:34,574 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:36:34,574 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:36:34,574 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:36:34,576 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:37:34,558 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:37:34,727 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:37:34,727 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:37:34,728 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:37:34,728 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:37:34,728 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:37:34,728 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:37:34,744 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:37:34
+2013-10-18 18:37:34,744 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:37:34,745 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:37:34,745 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:37:34,785 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:37:34,848 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:37:34,883 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:37:34,893 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:37:35,504 WARN  plugin.PluginRepository - Plugins: directory not found: plugins
+2013-10-18 18:37:35,505 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:37:35,505 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:37:35,505 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:37:35,505 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:37:35,505 INFO  plugin.PluginRepository - 	NONE
+2013-10-18 18:37:35,507 WARN  mapred.LocalJobRunner - job_local_0001
+java.lang.Exception: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:372)
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:385)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:322)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:239)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 10 more
+Caused by: java.lang.RuntimeException: Error in configuring object
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:101)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:72)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:125)
+	at org.apache.hadoop.mapred.MapRunner.configure(MapRunner.java:38)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:96)
+	... 18 more
+Caused by: java.lang.RuntimeException: x point org.apache.nutch.net.URLNormalizer not found.
+	at org.apache.nutch.net.URLNormalizers.<init>(URLNormalizers.java:122)
+	at org.apache.nutch.crawl.Injector$InjectMapper.configure(Injector.java:70)
+	... 23 more
+2013-10-18 18:43:44,211 WARN  crawl.Crawl - solrUrl is not set, indexing will be skipped...
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - crawl started in: crawl
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - rootUrlDir = urls
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - threads = 10
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - depth = 10
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - solrUrl=null
+2013-10-18 18:43:44,490 INFO  crawl.Crawl - topN = 10
+2013-10-18 18:43:44,501 INFO  crawl.Injector - Injector: starting at 2013-10-18 18:43:44
+2013-10-18 18:43:44,501 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2013-10-18 18:43:44,501 INFO  crawl.Injector - Injector: urlDir: urls
+2013-10-18 18:43:44,501 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-10-18 18:43:44,540 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-10-18 18:43:44,589 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-10-18 18:43:44,616 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:44,625 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:45,177 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - Registered Plugins:
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-10-18 18:43:45,267 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-10-18 18:43:45,268 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-10-18 18:43:45,268 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-10-18 18:43:45,268 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-10-18 18:43:45,268 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-10-18 18:43:45,306 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-10-18 18:43:46,076 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-10-18 18:43:46,090 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:46,095 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:47,300 INFO  crawl.Injector - Injector: finished at 2013-10-18 18:43:47, elapsed: 00:00:02
+2013-10-18 18:43:47,311 INFO  crawl.Generator - Generator: starting at 2013-10-18 18:43:47
+2013-10-18 18:43:47,311 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-10-18 18:43:47,311 INFO  crawl.Generator - Generator: filtering: true
+2013-10-18 18:43:47,311 INFO  crawl.Generator - Generator: normalizing: true
+2013-10-18 18:43:47,311 INFO  crawl.Generator - Generator: topN: 10
+2013-10-18 18:43:47,313 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-10-18 18:43:47,313 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-10-18 18:43:47,327 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:47,333 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:47,540 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-10-18 18:43:47,540 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-10-18 18:43:47,541 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-10-18 18:43:47,570 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-10-18 18:43:47,570 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-10-18 18:43:47,570 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-10-18 18:43:47,572 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-10-18 18:43:48,460 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-10-18 18:43:49,462 INFO  crawl.Generator - Generator: segment: crawl/segments/20131018184349
+2013-10-18 18:43:49,475 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:49,480 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:50,581 INFO  crawl.Generator - Generator: finished at 2013-10-18 18:43:50, elapsed: 00:00:03
+2013-10-18 18:43:50,582 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-10-18 18:43:50,582 INFO  fetcher.Fetcher - Fetcher: starting at 2013-10-18 18:43:50
+2013-10-18 18:43:50,582 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20131018184349
+2013-10-18 18:43:50,593 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:50,599 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:50,763 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,764 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-10-18 18:43:50,764 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-10-18 18:43:50,768 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-10-18 18:43:50,779 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,780 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,780 INFO  fetcher.Fetcher - fetching http://www.naver.com/
+2013-10-18 18:43:50,780 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,780 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,781 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,782 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,782 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,782 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,782 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,797 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,797 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,797 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,797 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-10-18 18:43:50,798 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-10-18 18:43:50,798 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-10-18 18:43:50,798 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-10-18 18:43:50,798 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-10-18 18:43:50,805 INFO  http.Http - http.proxy.host = null
+2013-10-18 18:43:50,806 INFO  http.Http - http.proxy.port = 8080
+2013-10-18 18:43:50,806 INFO  http.Http - http.timeout = 10000
+2013-10-18 18:43:50,806 INFO  http.Http - http.content.limit = 65536
+2013-10-18 18:43:50,806 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-10-18 18:43:50,806 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-10-18 18:43:50,806 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-10-18 18:43:51,169 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-10-18 18:43:51,800 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-10-18 18:43:51,800 INFO  fetcher.Fetcher - -activeThreads=0
+2013-10-18 18:43:52,697 INFO  fetcher.Fetcher - Fetcher: finished at 2013-10-18 18:43:52, elapsed: 00:00:02
+2013-10-18 18:43:52,698 INFO  parse.ParseSegment - ParseSegment: starting at 2013-10-18 18:43:52
+2013-10-18 18:43:52,698 INFO  parse.ParseSegment - ParseSegment: segment: crawl/segments/20131018184349
+2013-10-18 18:43:52,707 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:52,712 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:53,385 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-10-18 18:43:53,397 INFO  parse.ParseSegment - Parsed (15ms):http://www.naver.com/
+2013-10-18 18:43:53,476 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2013-10-18 18:43:53,807 INFO  parse.ParseSegment - ParseSegment: finished at 2013-10-18 18:43:53, elapsed: 00:00:01
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-10-18 18:43:53
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: db: crawl/crawldb
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl/segments/20131018184349]
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-10-18 18:43:53,818 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-10-18 18:43:53,819 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-10-18 18:43:53,828 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-10-18 18:43:53,834 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-10-18 18:43:54,069 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-10-18 18:43:54,190 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-10-18 18:43:54,294 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-10-18 18:43:54,323 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-10-18 18:43:54,323 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-10-18 18:43:54,323 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000

@@ -1,0 +1,153 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Nutch
+
+
+From: 'an unknown organization'
+  - Crawler-commons (http://code.google.com/p/crawler-commons/) com.google.code.crawler-commons:crawler-commons:jar:0.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ICU4J (http://www.icu-project.org/) com.ibm.icu:icu4j:jar:4.0.1
+    License: ICU License  (http://source.icu-project.org/repos/icu/icu/trunk/license.html)
+  - ParaNamer Core (http://paranamer.codehaus.org/paranamer) com.thoughtworks.paranamer:paranamer:jar:2.3
+    License: BSD  (LICENSE.txt)
+  - HSQLDB (http://hsqldb.org/) hsqldb:hsqldb:jar:1.8.0.10
+    License: HSQLDB License  (http://hsqldb.org/web/hsqlLicense.html)
+  - JavaBeans Activation Framework (JAF) (http://java.sun.com/products/javabeans/jaf/index.jsp) javax.activation:activation:jar:1.1
+    License: Common Development and Distribution License (CDDL) v1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - JavaMail API (https://glassfish.dev.java.net/javaee5/mail/) javax.mail:mail:jar:1.4
+    License: Common Development and Distribution License (CDDL) v1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - JLine (http://jline.sourceforge.net) jline:jline:jar:0.9.94
+    License: BSD  (LICENSE.txt)
+  - An open source Java toolkit for Amazon S3 (http://jets3t.s3.amazonaws.com/index.html) net.java.dev.jets3t:jets3t:jar:0.7.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - kosmosfs (http://kosmosfs.sourceforge.net/) net.sf.kosmosfs:kfs:jar:0.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - hadoop-common  org.apache.hadoop:hadoop-common:jar:0.22.0
+
+  - hadoop-common-test  org.apache.hadoop:hadoop-common-test:jar:0.22.0
+
+  - hadoop-hdfs  org.apache.hadoop:hadoop-hdfs:jar:0.22.0
+
+  - hadoop-mapred  org.apache.hadoop:hadoop-mapred:jar:0.22.0
+
+  - zookeeper  org.apache.zookeeper:zookeeper:jar:3.3.1
+
+  - Eclipse JDT Core (http://www.eclipse.org/jdt/) org.eclipse.jdt:core:jar:3.1.1
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Eclipse ECJ (http://www.eclipse.org/jdt/) org.eclipse.jdt.core.compiler:ecj:jar:3.5.1
+    License: Eclipse Public License v1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Snappy for Java  org.xerial.snappy:snappy-java:bundle:1.0.3.2
+
+  - oro  oro:oro:jar:2.0.8
+
+  - StAX API (http://stax.codehaus.org/) stax:stax-api:jar:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jasper-compiler  tomcat:jasper-compiler:jar:5.5.12
+
+  - jasper-runtime  tomcat:jasper-runtime:jar:5.5.12
+
+  - xmlParserAPIs  xerces:xmlParserAPIs:jar:2.6.2
+
+  - xmlenc Library (http://xmlenc.sourceforge.net) xmlenc:xmlenc:jar:0.52
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+
+From: 'Apache Software Foundation' (http://jakarta.apache.org/)
+  - HttpClient (http://jakarta.apache.org/httpcomponents/httpclient-3.x/) commons-httpclient:commons-httpclient:jar:3.1
+    License: Apache License  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - commons-collections  commons-collections:commons-collections:jar:3.1
+
+  - Apache Log4j (http://logging.apache.org:80/log4j/1.2/) log4j:log4j:jar:1.2.15
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Streaming API for XML (STAX API 1.0) (http://geronimo.apache.org/specs/geronimo-stax-api_1.0_spec) org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:bundle:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - XML Commons External Components XML APIs (http://xml.apache.org/commons/components/external/) xml-apis:xml-apis:jar:1.3.04
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Codehaus' (http://www.codehaus.org/)
+  - Woodstox (http://woodstox.codehaus.org) org.codehaus.woodstox:wstx-asl:jar:3.2.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'FasterXML' (http://fasterxml.com)
+  - Jackson (http://jackson.codehaus.org) org.codehaus.jackson:jackson-core-asl:jar:1.7.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Data Mapper for Jackson (http://jackson.codehaus.org) org.codehaus.jackson:jackson-mapper-asl:jar:1.7.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Google' (http://www.google.com/)
+  - Guava (Google Common Libraries) (http://code.google.com/p/guava-libraries) com.google.guava:guava:jar:r09
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'JUnit' (http://www.junit.org)
+  - JUnit (http://junit.org) junit:junit:jar:3.8.1
+    License: Common Public License Version 1.0  (http://www.opensource.org/licenses/cpl1.0.txt)
+
+From: 'Mort Bay Consulting' (http://www.mortbay.com)
+  - Jetty Server (http://www.eclipse.org/jetty/jetty-parent/project/modules/jetty) org.mortbay.jetty:jetty:jar:6.1.22
+    License: Apache Software License - Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)    License: Eclipse Public License - Version 1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Jetty HTTP Client (http://www.eclipse.org/jetty/jetty-parent/project/jetty-client) org.mortbay.jetty:jetty-client:jar:6.1.22
+    License: Apache Software License - Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)    License: Eclipse Public License - Version 1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Jetty SSLEngine (http://jetty.mortbay.org) org.mortbay.jetty:jetty-sslengine:jar:6.1.22
+    License: Apache License Version 2  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Jetty Utilities (http://www.eclipse.org/jetty/jetty-parent/project/jetty-util) org.mortbay.jetty:jetty-util:jar:6.1.22
+    License: Apache Software License - Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)    License: Eclipse Public License - Version 1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Jetty JRE 1.5 Utilities (http://www.eclipse.org/jetty/jetty-parent/project/jetty-util5) org.mortbay.jetty:jetty-util5:jar:6.1.22
+    License: Apache Software License - Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)    License: Eclipse Public License - Version 1.0  (http://www.eclipse.org/org/documents/epl-v10.php)
+  - Glassfish :: Jasper JSP 2.1 (http://www.eclipse.org/jetty/jetty-parent/jetty-jsp/jsp-2.1-glassfish) org.mortbay.jetty:jsp-2.1-glassfish:jar:2.1.v20091210
+    License: CDDL 1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - Glassfish Jasper (http://www.eclipse.org/jetty/jetty-parent/project/jsp-2.1-jetty) org.mortbay.jetty:jsp-2.1-jetty:jar:6.1.26
+    License: CDDL 1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - Glassfish :: Jasper API JSP 2.1 (http://www.eclipse.org/jetty/jetty-parent/jetty-jsp/jsp-api-2.1-glassfish) org.mortbay.jetty:jsp-api-2.1-glassfish:jar:2.1.v20091210
+    License: CDDL 1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - Servlet Specification API (http://jetty.mortbay.org/servlet-api) org.mortbay.jetty:servlet-api:jar:2.5-20081211
+    License: Apache License Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.5.5
+
+  - SLF4J LOG4J-12 Binding (http://www.slf4j.org) org.slf4j:slf4j-log4j12:jar:1.5.5
+
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Codec (http://jakarta.apache.org/commons/codec/) commons-codec:commons-codec:jar:1.3
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - EL (http://jakarta.apache.org/commons/el/) commons-el:commons-el:jar:1.0
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging:jar:1.0.4
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Jakarta Commons Net (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-net:commons-net:jar:1.4.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons CLI (http://commons.apache.org/cli/) commons-cli:commons-cli:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons IO (http://commons.apache.org/io/) commons-io:commons-io:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Lang (http://commons.apache.org/lang/) commons-lang:commons-lang:jar:2.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Avro (http://avro.apache.org) org.apache.avro:avro:jar:1.5.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Avro IPC (http://avro.apache.org) org.apache.avro:avro-ipc:jar:1.5.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - HttpClient (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpclient:jar:4.1.1
+    License: Apache License  (LICENSE.txt)
+  - HttpCore (http://hc.apache.org/httpcomponents-core-ga/) org.apache.httpcomponents:httpcore:jar:4.1
+    License: Apache License  (LICENSE.txt)
+  - Lucene Core (http://lucene.apache.org/java/lucene-parent/lucene-core) org.apache.lucene:lucene-core:jar:3.1.0
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Solr Solrj (http://lucene.apache.org/java/solr-parent/solr-solrj) org.apache.solr:solr-solrj:jar:3.1.0
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tika core (http://tika.apache.org/) org.apache.tika:tika-core:bundle:0.10
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Xerces2 Java Parser (http://xerces.apache.org/xerces2-j) xerces:xercesImpl:jar:2.9.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

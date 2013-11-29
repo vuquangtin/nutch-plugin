@@ -1,0 +1,1623 @@
+2013-11-07 11:42:30,390 INFO  crawl.Crawl - crawl started in: crawl-20131107114230
+2013-11-07 11:42:30,391 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 11:42:30,391 INFO  crawl.Crawl - threads = 10
+2013-11-07 11:42:30,391 INFO  crawl.Crawl - depth = 10
+2013-11-07 11:42:30,391 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 11:42:30,392 INFO  crawl.Crawl - topN = 50
+2013-11-07 11:42:30,404 INFO  crawl.Injector - Injector: starting at 2013-11-07 11:42:30
+2013-11-07 11:42:30,404 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107114230/crawldb
+2013-11-07 11:42:30,405 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 11:42:30,405 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 11:42:30,442 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 11:42:30,525 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 11:42:30,566 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:30,576 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:31,210 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 11:42:31,316 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 11:42:31,317 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 11:42:31,367 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 11:42:32,084 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 11:42:32,096 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:32,102 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:33,303 INFO  crawl.Injector - Injector: finished at 2013-11-07 11:42:33, elapsed: 00:00:02
+2013-11-07 11:42:33,314 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:42:33
+2013-11-07 11:42:33,314 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:42:33,314 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:42:33,314 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:42:33,314 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:42:33,315 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 11:42:33,316 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:42:33,331 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:33,338 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:33,544 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:42:33,545 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:42:33,545 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:42:33,576 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:42:33,577 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:42:33,577 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:42:33,579 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:42:34,477 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:42:35,478 INFO  crawl.Generator - Generator: segment: crawl-20131107114230/segments/20131107114235
+2013-11-07 11:42:35,490 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:35,496 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:36,613 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:42:36, elapsed: 00:00:03
+2013-11-07 11:42:36,614 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:42:36,614 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:42:36
+2013-11-07 11:42:36,614 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107114230/segments/20131107114235
+2013-11-07 11:42:36,625 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:36,630 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:36,815 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,815 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:42:36,815 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:42:36,820 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 11:42:36,832 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,833 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,833 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 11:42:36,833 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,834 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,834 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,835 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,835 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,836 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,836 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,837 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:36,837 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=7
+2013-11-07 11:42:36,837 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=6
+2013-11-07 11:42:36,837 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=5
+2013-11-07 11:42:36,837 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 11:42:36,837 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:42:36,838 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:42:36,838 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=4
+2013-11-07 11:42:36,838 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2013-11-07 11:42:36,839 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 11:42:36,863 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:42:36,864 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:42:36,863 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:42:36,870 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:42:36,870 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:42:36,870 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:42:36,870 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:42:36,870 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:42:36,870 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:42:36,870 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:42:37,840 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:42:38,841 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:42:39,517 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 11:42:39,843 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:42:39,843 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 11:42:40,746 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 11:42:40, elapsed: 00:00:04
+2013-11-07 11:42:40,746 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 11:42:40
+2013-11-07 11:42:40,746 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107114230/segments/20131107114235
+2013-11-07 11:42:40,755 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:40,760 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:41,185 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 11:42:41,193 INFO  parse.ParseSegment - Parsed (11ms):http://www.everytrail.com/
+2013-11-07 11:42:41,278 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2013-11-07 11:42:41,849 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 11:42:41, elapsed: 00:00:01
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 11:42:41
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107114230/crawldb
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107114230/segments/20131107114235]
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 11:42:41,860 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 11:42:41,861 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 11:42:41,870 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:41,875 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:42,066 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:42:42,185 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:42:42,249 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:42:42,267 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:42:42,267 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:42:42,267 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:42:43,004 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 11:42:43, elapsed: 00:00:01
+2013-11-07 11:42:43,015 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:42:43
+2013-11-07 11:42:43,015 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:42:43,015 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:42:43,015 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:42:43,015 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:42:43,016 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:42:43,024 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:43,029 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:43,178 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:42:43,179 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:42:43,179 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:42:43,221 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:42:43,221 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:42:43,221 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:42:43,222 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:42:44,130 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:42:45,131 INFO  crawl.Generator - Generator: segment: crawl-20131107114230/segments/20131107114245
+2013-11-07 11:42:45,141 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:45,147 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:46,235 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:42:46, elapsed: 00:00:03
+2013-11-07 11:42:46,235 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:42:46,235 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:42:46
+2013-11-07 11:42:46,235 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107114230/segments/20131107114245
+2013-11-07 11:42:46,245 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:42:46,251 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:42:46,394 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,395 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:42:46,395 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:42:46,400 INFO  fetcher.Fetcher - QueueFeeder finished: total 50 records + hit by time limit :0
+2013-11-07 11:42:46,403 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,403 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,403 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/create_trip.php
+2013-11-07 11:42:46,404 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,405 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,405 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,406 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,406 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,406 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,404 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:42:46,407 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:42:46,407 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:42:46,407 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:42:46,407 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:42:46,407 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:42:46,407 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:42:46,408 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,408 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:42:46,409 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:42:46,409 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:42:46,994 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2013-11-07 11:42:47,410 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 11:42:48,412 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 11:42:49,413 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 11:42:50,414 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 11:42:51,415 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 11:42:52,053 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/five-lakes-granite-chief-wilderness-lake-tahoe
+2013-11-07 11:42:52,416 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=48
+2013-11-07 11:42:53,418 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 11:42:54,418 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 11:42:55,419 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 11:42:56,420 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 11:42:57,422 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 11:42:58,404 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destination/kings-canyon-national-park
+2013-11-07 11:42:58,423 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=47
+2013-11-07 11:42:59,424 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=47
+2013-11-07 11:43:00,425 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 11:43:01,425 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 11:43:02,427 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 11:43:03,428 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 11:43:04,429 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 11:43:04,873 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destinations/list
+2013-11-07 11:43:05,430 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=46
+2013-11-07 11:43:06,431 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=46
+2013-11-07 11:43:07,433 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=46
+2013-11-07 11:43:08,434 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=46
+2013-11-07 11:43:09,435 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=46
+2013-11-07 11:43:10,437 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=46
+2013-11-07 11:43:10,922 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/hiking-the-grand-canyon-rim-to-rim
+2013-11-07 11:43:11,438 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=45
+2013-11-07 11:43:12,439 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45
+2013-11-07 11:43:13,441 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45
+2013-11-07 11:43:14,442 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45
+2013-11-07 11:43:15,443 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45
+2013-11-07 11:43:16,445 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45
+2013-11-07 11:43:17,291 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/chinatown-san-francisco-walk
+2013-11-07 11:43:17,446 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=44
+2013-11-07 11:43:18,447 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=44
+2013-11-07 11:43:19,449 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44
+2013-11-07 11:43:20,449 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44
+2013-11-07 11:43:21,451 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44
+2013-11-07 11:43:22,452 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44
+2013-11-07 11:43:23,453 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44
+2013-11-07 11:43:23,518 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/boston-s-emerald-necklace
+2013-11-07 11:43:24,455 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=43
+2013-11-07 11:43:25,456 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43
+2013-11-07 11:43:26,456 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43
+2013-11-07 11:43:27,458 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43
+2013-11-07 11:43:28,459 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43
+2013-11-07 11:43:29,460 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43
+2013-11-07 11:43:29,917 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destination/lake-tahoe
+2013-11-07 11:43:30,461 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=42
+2013-11-07 11:43:31,463 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=42
+2013-11-07 11:43:32,463 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42
+2013-11-07 11:43:33,464 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42
+2013-11-07 11:43:34,466 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42
+2013-11-07 11:43:35,467 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42
+2013-11-07 11:43:36,468 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42
+2013-11-07 11:43:36,885 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destination/olympic-national-park
+2013-11-07 11:43:37,469 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:38,471 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:39,471 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:40,472 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:41,472 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:42,474 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:43,475 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:44,476 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:45,478 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:46,479 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:47,480 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41
+2013-11-07 11:43:48,481 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41
+2013-11-07 11:43:49,482 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41
+2013-11-07 11:43:50,483 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41
+2013-11-07 11:43:51,484 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41
+2013-11-07 11:43:52,486 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41
+2013-11-07 11:43:52,683 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/iphone.php
+2013-11-07 11:43:53,487 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40
+2013-11-07 11:43:54,488 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40
+2013-11-07 11:43:55,489 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40
+2013-11-07 11:43:56,491 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40
+2013-11-07 11:43:57,492 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40
+2013-11-07 11:43:58,429 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/best-bay-area-day-hikes
+2013-11-07 11:43:58,493 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=39
+2013-11-07 11:43:59,494 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=39
+2013-11-07 11:44:00,496 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39
+2013-11-07 11:44:01,497 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39
+2013-11-07 11:44:02,498 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39
+2013-11-07 11:44:03,499 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39
+2013-11-07 11:44:04,501 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39
+2013-11-07 11:44:05,325 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destinations/us-state-parks
+2013-11-07 11:44:05,502 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=38
+2013-11-07 11:44:06,503 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=38
+2013-11-07 11:44:07,504 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38
+2013-11-07 11:44:08,505 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38
+2013-11-07 11:44:09,505 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38
+2013-11-07 11:44:10,507 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38
+2013-11-07 11:44:11,508 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38
+2013-11-07 11:44:11,656 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/browse.php
+2013-11-07 11:44:12,508 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=37
+2013-11-07 11:44:13,510 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37
+2013-11-07 11:44:14,510 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37
+2013-11-07 11:44:15,512 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37
+2013-11-07 11:44:16,513 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37
+2013-11-07 11:44:17,514 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37
+2013-11-07 11:44:18,344 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destinations/us-national-parks
+2013-11-07 11:44:18,515 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=36
+2013-11-07 11:44:19,517 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36
+2013-11-07 11:44:20,518 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36
+2013-11-07 11:44:21,519 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36
+2013-11-07 11:44:22,520 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36
+2013-11-07 11:44:23,521 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36
+2013-11-07 11:44:24,358 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/hanakapi-ai-falls-na-pali-coast-kauai
+2013-11-07 11:44:24,521 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=35
+2013-11-07 11:44:25,522 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35
+2013-11-07 11:44:26,523 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35
+2013-11-07 11:44:27,525 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35
+2013-11-07 11:44:28,526 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35
+2013-11-07 11:44:29,527 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35
+2013-11-07 11:44:30,520 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/mobile
+2013-11-07 11:44:30,528 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=34
+2013-11-07 11:44:31,529 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34
+2013-11-07 11:44:32,530 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34
+2013-11-07 11:44:33,531 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34
+2013-11-07 11:44:34,533 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34
+2013-11-07 11:44:35,533 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34
+2013-11-07 11:44:36,337 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/upper-yosemite-fall-hike
+2013-11-07 11:44:36,534 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=33
+2013-11-07 11:44:37,535 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33
+2013-11-07 11:44:38,536 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - crawl started in: crawl-20131107114856
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - threads = 10
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - depth = 10
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 11:48:56,872 INFO  crawl.Crawl - topN = 50
+2013-11-07 11:48:56,886 INFO  crawl.Injector - Injector: starting at 2013-11-07 11:48:56
+2013-11-07 11:48:56,886 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107114856/crawldb
+2013-11-07 11:48:56,886 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 11:48:56,886 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 11:48:56,931 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 11:48:57,020 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 11:48:57,042 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:48:57,054 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:48:57,761 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 11:48:57,904 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 11:48:57,905 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 11:48:57,905 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 11:48:57,937 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 11:48:58,624 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 11:48:58,638 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:48:58,645 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:48:59,894 INFO  crawl.Injector - Injector: finished at 2013-11-07 11:48:59, elapsed: 00:00:03
+2013-11-07 11:48:59,905 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:48:59
+2013-11-07 11:48:59,905 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:48:59,905 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:48:59,905 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:48:59,906 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:48:59,907 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 11:48:59,907 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:48:59,925 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:48:59,932 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:49:00,191 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:49:00,191 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:49:00,191 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:49:00,228 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:49:00,228 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:49:00,229 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:49:00,231 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:49:01,106 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:49:02,107 INFO  crawl.Generator - Generator: segment: crawl-20131107114856/segments/20131107114902
+2013-11-07 11:49:02,120 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:49:02,127 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:49:03,275 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:49:03, elapsed: 00:00:03
+2013-11-07 11:49:03,276 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:49:03,276 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:49:03
+2013-11-07 11:49:03,276 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107114856/segments/20131107114902
+2013-11-07 11:49:03,287 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:49:03,294 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:49:03,493 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,493 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:49:03,493 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:49:03,498 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 11:49:03,512 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,513 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,513 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,514 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 11:49:03,514 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,515 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,516 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2013-11-07 11:49:03,516 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,516 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 11:49:03,517 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:49:03,517 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,518 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,519 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,519 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:49:03,520 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 11:49:03,520 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:49:03,520 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:49:03,544 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=6
+2013-11-07 11:49:03,545 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=5
+2013-11-07 11:49:03,545 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=4
+2013-11-07 11:49:03,545 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2013-11-07 11:49:03,545 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 11:49:03,546 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:49:03,557 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:49:03,557 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:49:03,557 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:49:03,557 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:49:03,557 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:49:03,557 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:49:03,557 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:49:04,523 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:49:05,525 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:49:06,525 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:49:06,639 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 11:49:07,526 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:49:07,526 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 11:49:08,418 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 11:49:08, elapsed: 00:00:05
+2013-11-07 11:49:08,419 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 11:49:08
+2013-11-07 11:49:08,419 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107114856/segments/20131107114902
+2013-11-07 11:49:08,429 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:49:08,435 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:01,610 INFO  crawl.Crawl - crawl started in: crawl-20131107115001
+2013-11-07 11:50:01,611 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 11:50:01,611 INFO  crawl.Crawl - threads = 10
+2013-11-07 11:50:01,611 INFO  crawl.Crawl - depth = 10
+2013-11-07 11:50:01,611 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 11:50:01,611 INFO  crawl.Crawl - topN = 50
+2013-11-07 11:50:01,622 INFO  crawl.Injector - Injector: starting at 2013-11-07 11:50:01
+2013-11-07 11:50:01,622 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107115001/crawldb
+2013-11-07 11:50:01,622 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 11:50:01,623 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 11:50:01,667 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 11:50:01,742 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 11:50:01,768 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:01,780 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:02,503 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 11:50:02,622 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 11:50:02,636 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 11:50:02,637 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 11:50:02,676 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 11:50:03,379 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 11:50:03,392 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:03,398 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:04,620 INFO  crawl.Injector - Injector: finished at 2013-11-07 11:50:04, elapsed: 00:00:02
+2013-11-07 11:50:04,632 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:50:04
+2013-11-07 11:50:04,633 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:50:04,633 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:50:04,633 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:50:04,633 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:50:04,634 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 11:50:04,634 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:50:04,652 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:04,658 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:04,910 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:50:04,910 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:50:04,910 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:50:04,946 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:50:04,946 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:50:04,946 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:50:04,949 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:50:05,829 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:50:06,831 INFO  crawl.Generator - Generator: segment: crawl-20131107115001/segments/20131107115006
+2013-11-07 11:50:06,844 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:06,851 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:08,010 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:50:08, elapsed: 00:00:03
+2013-11-07 11:50:08,010 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:50:08,011 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:50:08
+2013-11-07 11:50:08,011 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107115001/segments/20131107115006
+2013-11-07 11:50:08,022 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:08,028 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:08,247 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,247 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:50:08,247 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:50:08,254 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 11:50:08,269 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,270 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,271 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 11:50:08,271 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,273 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,273 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 11:50:08,273 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,274 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,275 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,298 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=3
+2013-11-07 11:50:08,298 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,299 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 11:50:08,299 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,299 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,300 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,300 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:50:08,300 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 11:50:08,300 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:50:08,300 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:50:08,303 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,303 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,305 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,306 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:50:08,320 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:50:08,320 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:50:08,320 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:50:08,320 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:50:08,320 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:50:08,320 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:50:08,320 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:50:09,302 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:50:09,970 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 11:50:10,303 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:50:10,304 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 11:50:11,160 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 11:50:11, elapsed: 00:00:03
+2013-11-07 11:50:11,161 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 11:50:11
+2013-11-07 11:50:11,161 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107115001/segments/20131107115006
+2013-11-07 11:50:11,170 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:11,176 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:11,703 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 11:50:11,713 INFO  parse.ParseSegment - Parsed (14ms):http://www.everytrail.com/
+2013-11-07 11:50:11,814 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2013-11-07 11:50:12,295 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 11:50:12, elapsed: 00:00:01
+2013-11-07 11:50:12,304 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 11:50:12
+2013-11-07 11:50:12,304 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107115001/crawldb
+2013-11-07 11:50:12,304 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107115001/segments/20131107115006]
+2013-11-07 11:50:12,305 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 11:50:12,305 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 11:50:12,305 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 11:50:12,305 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 11:50:12,306 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 11:50:12,317 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:12,324 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:12,576 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:50:12,693 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:50:12,769 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:50:12,790 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:50:12,790 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:50:12,790 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:50:13,502 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 11:50:13, elapsed: 00:00:01
+2013-11-07 11:50:13,510 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:50:13
+2013-11-07 11:50:13,510 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:50:13,510 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:50:13,510 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:50:13,510 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:50:13,511 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:50:13,521 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:50:13,527 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:50:13,723 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:50:13,723 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:50:13,723 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:50:13,768 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:50:13,768 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:50:13,768 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:50:13,769 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:50:14,666 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:51:50,593 INFO  crawl.Crawl - crawl started in: crawl-20131107115150
+2013-11-07 11:51:50,594 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 11:51:50,594 INFO  crawl.Crawl - threads = 10
+2013-11-07 11:51:50,594 INFO  crawl.Crawl - depth = 10
+2013-11-07 11:51:50,594 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 11:51:50,594 INFO  crawl.Crawl - topN = 50
+2013-11-07 11:51:50,609 INFO  crawl.Injector - Injector: starting at 2013-11-07 11:51:50
+2013-11-07 11:51:50,610 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107115150/crawldb
+2013-11-07 11:51:50,610 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 11:51:50,610 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 11:51:50,656 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 11:51:50,738 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 11:51:50,761 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:51:50,773 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:51:51,454 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 11:51:51,561 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 11:51:51,561 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 11:51:51,562 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 11:51:51,592 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 11:51:52,332 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 11:51:52,346 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:51:52,352 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:51:53,594 INFO  crawl.Injector - Injector: finished at 2013-11-07 11:51:53, elapsed: 00:00:02
+2013-11-07 11:51:53,605 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:51:53
+2013-11-07 11:51:53,606 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:51:53,606 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:51:53,606 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:51:53,606 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:51:53,608 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 11:51:53,608 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:51:53,626 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:51:53,632 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:51:53,870 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:51:53,870 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:51:53,870 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:51:53,907 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:51:53,907 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:51:53,907 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:51:53,911 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:51:54,781 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:51:55,782 INFO  crawl.Generator - Generator: segment: crawl-20131107115150/segments/20131107115155
+2013-11-07 11:51:55,795 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:51:55,804 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:51:56,950 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:51:56, elapsed: 00:00:03
+2013-11-07 11:51:56,950 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:51:56,950 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:51:56
+2013-11-07 11:51:56,951 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107115150/segments/20131107115155
+2013-11-07 11:51:56,963 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:51:56,969 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:51:57,192 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,192 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:51:57,192 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:51:57,196 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 11:51:57,210 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,210 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,211 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 11:51:57,211 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,211 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,211 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,212 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,212 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,212 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,216 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,217 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,218 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,219 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,220 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,220 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,221 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,221 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,221 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,222 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:51:57,225 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 11:51:57,225 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:51:57,225 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:51:57,225 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:51:57,233 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:51:57,233 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:51:57,233 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:51:57,233 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:51:57,233 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:51:57,233 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:51:57,233 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:51:58,229 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:51:58,801 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 11:51:59,229 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:51:59,230 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 11:52:00,117 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 11:52:00, elapsed: 00:00:03
+2013-11-07 11:52:00,118 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 11:52:00
+2013-11-07 11:52:00,118 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107115150/segments/20131107115155
+2013-11-07 11:52:00,127 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:00,133 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:14,354 INFO  crawl.Crawl - crawl started in: crawl-20131107115214
+2013-11-07 11:52:14,354 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 11:52:14,354 INFO  crawl.Crawl - threads = 10
+2013-11-07 11:52:14,354 INFO  crawl.Crawl - depth = 10
+2013-11-07 11:52:14,354 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 11:52:14,355 INFO  crawl.Crawl - topN = 50
+2013-11-07 11:52:14,367 INFO  crawl.Injector - Injector: starting at 2013-11-07 11:52:14
+2013-11-07 11:52:14,367 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107115214/crawldb
+2013-11-07 11:52:14,367 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 11:52:14,367 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 11:52:14,410 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 11:52:14,492 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 11:52:14,519 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:14,530 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:15,224 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 11:52:15,351 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 11:52:15,351 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 11:52:15,372 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 11:52:15,373 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 11:52:15,419 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 11:52:16,101 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 11:52:16,114 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:16,121 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:17,338 INFO  crawl.Injector - Injector: finished at 2013-11-07 11:52:17, elapsed: 00:00:02
+2013-11-07 11:52:17,350 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:52:17
+2013-11-07 11:52:17,350 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:52:17,350 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:52:17,350 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:52:17,350 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:52:17,352 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 11:52:17,352 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:52:17,371 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:17,376 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:17,626 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:52:17,627 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:52:17,627 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:52:17,664 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:52:17,665 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:52:17,665 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:52:17,667 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 11:52:18,539 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 11:52:19,540 INFO  crawl.Generator - Generator: segment: crawl-20131107115214/segments/20131107115219
+2013-11-07 11:52:19,551 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:19,559 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:20,703 INFO  crawl.Generator - Generator: finished at 2013-11-07 11:52:20, elapsed: 00:00:03
+2013-11-07 11:52:20,703 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 11:52:20,704 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 11:52:20
+2013-11-07 11:52:20,704 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107115214/segments/20131107115219
+2013-11-07 11:52:20,717 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:20,725 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:20,944 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,944 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 11:52:20,944 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 11:52:20,949 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 11:52:20,959 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,959 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,960 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,960 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 11:52:20,960 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,960 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,961 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,962 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,963 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,963 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,964 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,964 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,964 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,965 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,965 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,966 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,966 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,966 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 11:52:20,967 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,967 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 11:52:20,968 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 11:52:20,969 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 11:52:20,969 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 11:52:20,976 INFO  http.Http - http.proxy.host = null
+2013-11-07 11:52:20,976 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 11:52:20,976 INFO  http.Http - http.timeout = 10000
+2013-11-07 11:52:20,976 INFO  http.Http - http.content.limit = 65536
+2013-11-07 11:52:20,976 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 11:52:20,976 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 11:52:20,976 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 11:52:21,972 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:52:22,535 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 11:52:22,973 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 11:52:22,973 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 11:52:23,874 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 11:52:23, elapsed: 00:00:03
+2013-11-07 11:52:23,874 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 11:52:23
+2013-11-07 11:52:23,874 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107115214/segments/20131107115219
+2013-11-07 11:52:23,882 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:23,888 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:54,134 WARN  parse.ParseUtil - TIMEOUT parsing http://www.everytrail.com/ with org.apache.nutch.parse.html.HtmlParser@32254fb0
+2013-11-07 11:52:54,134 WARN  parse.ParseUtil - Unable to successfully parse content http://www.everytrail.com/ of type application/xhtml+xml
+2013-11-07 11:52:54,139 WARN  parse.ParseSegment - Error parsing: http://www.everytrail.com/: failed(2,200): org.apache.nutch.parse.ParseException: Unable to successfully parse content
+2013-11-07 11:52:54,140 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 11:52:54,149 INFO  parse.ParseSegment - Parsed (12ms):http://www.everytrail.com/
+2013-11-07 11:52:55,061 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 11:52:55, elapsed: 00:00:31
+2013-11-07 11:52:55,072 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 11:52:55
+2013-11-07 11:52:55,072 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107115214/crawldb
+2013-11-07 11:52:55,073 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107115214/segments/20131107115219]
+2013-11-07 11:52:55,073 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 11:52:55,073 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 11:52:55,073 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 11:52:55,073 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 11:52:55,074 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 11:52:55,089 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:55,096 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:55,344 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:52:55,433 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:52:55,520 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 11:52:55,555 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:52:55,555 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:52:55,555 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:52:56,259 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 11:52:56, elapsed: 00:00:01
+2013-11-07 11:52:56,267 INFO  crawl.Generator - Generator: starting at 2013-11-07 11:52:56
+2013-11-07 11:52:56,267 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 11:52:56,267 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 11:52:56,267 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 11:52:56,267 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 11:52:56,268 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 11:52:56,278 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:56,287 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:56,475 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:52:56,475 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:52:56,475 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:52:56,493 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 11:52:56,493 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 11:52:56,493 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 11:52:57,398 WARN  crawl.Generator - Generator: 0 records selected for fetching, exiting ...
+2013-11-07 11:52:57,399 INFO  crawl.Crawl - Stopping at depth=1 - no more URLs to fetch.
+2013-11-07 11:52:57,403 WARN  conf.Configuration - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: starting at 2013-11-07 11:52:57
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: linkdb: crawl-20131107115214/linkdb
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2013-11-07 11:52:57,413 INFO  crawl.LinkDb - LinkDb: adding segment: file:/Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/crawl-20131107115214/segments/20131107115219
+2013-11-07 11:52:57,424 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:57,431 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:57,600 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2013-11-07 11:52:58,538 INFO  crawl.LinkDb - LinkDb: finished at 2013-11-07 11:52:58, elapsed: 00:00:01
+2013-11-07 11:52:58,545 INFO  solr.SolrIndexer - SolrIndexer: starting at 2013-11-07 11:52:58
+2013-11-07 11:52:58,547 INFO  indexer.IndexerMapReduce - IndexerMapReduce: crawldb: crawl-20131107115214/crawldb
+2013-11-07 11:52:58,547 INFO  indexer.IndexerMapReduce - IndexerMapReduce: linkdb: crawl-20131107115214/linkdb
+2013-11-07 11:52:58,547 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: file:/Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/crawl-20131107115214/segments/20131107115219
+2013-11-07 11:52:58,562 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:58,568 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:52:58,776 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:58,778 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:58,778 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,073 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,073 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,073 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,179 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,179 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,180 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,232 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,232 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,232 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,276 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,276 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,276 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,359 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,359 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,359 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,381 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 11:52:59,381 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 11:52:59,382 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: content dest: content
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: title dest: title
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: host dest: host
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: segment dest: segment
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: boost dest: boost
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: digest dest: digest
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: tstamp dest: tstamp
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: url dest: id
+2013-11-07 11:52:59,420 INFO  solr.SolrMappingReader - source: url dest: url
+2013-11-07 11:52:59,858 INFO  solr.SolrIndexer - SolrIndexer: finished at 2013-11-07 11:52:59, elapsed: 00:00:01
+2013-11-07 11:52:59,859 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: starting at 2013-11-07 11:52:59
+2013-11-07 11:52:59,859 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: Solr url: http://localhost:8983/solr/
+2013-11-07 11:52:59,874 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 11:52:59,881 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 11:53:01,057 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: finished at 2013-11-07 11:53:01, elapsed: 00:00:01
+2013-11-07 11:53:01,057 INFO  crawl.Crawl - crawl finished: crawl-20131107115214
+2013-11-07 13:22:03,306 INFO  crawl.Crawl - crawl started in: crawl-20131107132202
+2013-11-07 13:22:03,307 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 13:22:03,307 INFO  crawl.Crawl - threads = 10
+2013-11-07 13:22:03,307 INFO  crawl.Crawl - depth = 10
+2013-11-07 13:22:03,307 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 13:22:03,307 INFO  crawl.Crawl - topN = 50
+2013-11-07 13:22:03,318 INFO  crawl.Injector - Injector: starting at 2013-11-07 13:22:03
+2013-11-07 13:22:03,318 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107132202/crawldb
+2013-11-07 13:22:03,318 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 13:22:03,318 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 13:22:03,358 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 13:22:03,428 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 13:22:03,454 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:03,466 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:04,155 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 13:22:04,255 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 13:22:04,269 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 13:22:04,269 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 13:22:04,269 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 13:22:04,304 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 13:22:05,031 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 13:22:05,045 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:05,051 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:06,303 INFO  crawl.Injector - Injector: finished at 2013-11-07 13:22:06, elapsed: 00:00:02
+2013-11-07 13:22:06,313 INFO  crawl.Generator - Generator: starting at 2013-11-07 13:22:06
+2013-11-07 13:22:06,314 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 13:22:06,314 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 13:22:06,314 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 13:22:06,314 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 13:22:06,315 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 13:22:06,316 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 13:22:06,332 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:06,339 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:06,589 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 13:22:06,590 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 13:22:06,590 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 13:22:06,625 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 13:22:06,625 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 13:22:06,625 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 13:22:06,628 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 13:22:07,509 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 13:22:08,511 INFO  crawl.Generator - Generator: segment: crawl-20131107132202/segments/20131107132208
+2013-11-07 13:22:08,525 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:08,532 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:09,666 INFO  crawl.Generator - Generator: finished at 2013-11-07 13:22:09, elapsed: 00:00:03
+2013-11-07 13:22:09,666 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 13:22:09,667 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 13:22:09
+2013-11-07 13:22:09,667 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107132202/segments/20131107132208
+2013-11-07 13:22:09,679 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:09,686 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:09,887 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,888 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 13:22:09,888 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 13:22:09,891 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 13:22:09,907 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,908 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,908 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 13:22:09,909 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,909 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,910 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,911 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,912 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,912 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,913 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,914 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,915 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,916 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,933 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,935 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,936 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,937 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,937 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,938 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 13:22:09,938 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 13:22:09,938 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 13:22:09,939 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 13:22:09,938 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 13:22:09,942 INFO  http.Http - http.proxy.host = null
+2013-11-07 13:22:09,942 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 13:22:09,942 INFO  http.Http - http.timeout = 10000
+2013-11-07 13:22:09,942 INFO  http.Http - http.content.limit = 65536
+2013-11-07 13:22:09,942 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 13:22:09,942 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 13:22:09,942 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 13:22:10,942 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 13:22:11,512 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 13:22:11,943 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 13:22:11,943 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 13:22:12,813 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 13:22:12, elapsed: 00:00:03
+2013-11-07 13:22:12,813 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 13:22:12
+2013-11-07 13:22:12,813 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107132202/segments/20131107132208
+2013-11-07 13:22:12,823 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:12,829 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:43,046 WARN  parse.ParseUtil - TIMEOUT parsing http://www.everytrail.com/ with org.apache.nutch.parse.html.HtmlParser@14aad613
+2013-11-07 13:22:43,047 WARN  parse.ParseUtil - Unable to successfully parse content http://www.everytrail.com/ of type application/xhtml+xml
+2013-11-07 13:22:43,051 WARN  parse.ParseSegment - Error parsing: http://www.everytrail.com/: failed(2,200): org.apache.nutch.parse.ParseException: Unable to successfully parse content
+2013-11-07 13:22:43,052 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 13:22:43,058 INFO  parse.ParseSegment - Parsed (9ms):http://www.everytrail.com/
+2013-11-07 13:22:43,981 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 13:22:43, elapsed: 00:00:31
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 13:22:43
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107132202/crawldb
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107132202/segments/20131107132208]
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 13:22:43,992 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 13:22:43,993 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 13:22:44,004 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:44,011 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:44,252 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 13:22:44,327 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 13:22:44,405 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 13:22:44,429 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 13:22:44,429 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 13:22:44,429 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 13:22:45,174 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 13:22:45, elapsed: 00:00:01
+2013-11-07 13:22:45,182 INFO  crawl.Generator - Generator: starting at 2013-11-07 13:22:45
+2013-11-07 13:22:45,182 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 13:22:45,182 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 13:22:45,182 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 13:22:45,182 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 13:22:45,183 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 13:22:45,192 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:45,200 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:45,406 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 13:22:45,406 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 13:22:45,406 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 13:22:45,421 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 13:22:45,421 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 13:22:45,421 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 13:22:46,345 WARN  crawl.Generator - Generator: 0 records selected for fetching, exiting ...
+2013-11-07 13:22:46,346 INFO  crawl.Crawl - Stopping at depth=1 - no more URLs to fetch.
+2013-11-07 13:22:46,350 WARN  conf.Configuration - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: starting at 2013-11-07 13:22:46
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: linkdb: crawl-20131107132202/linkdb
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2013-11-07 13:22:46,360 INFO  crawl.LinkDb - LinkDb: adding segment: file:/Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/crawl-20131107132202/segments/20131107132208
+2013-11-07 13:22:46,368 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:46,375 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:46,533 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2013-11-07 13:22:47,469 INFO  crawl.LinkDb - LinkDb: finished at 2013-11-07 13:22:47, elapsed: 00:00:01
+2013-11-07 13:22:47,473 INFO  solr.SolrIndexer - SolrIndexer: starting at 2013-11-07 13:22:47
+2013-11-07 13:22:47,475 INFO  indexer.IndexerMapReduce - IndexerMapReduce: crawldb: crawl-20131107132202/crawldb
+2013-11-07 13:22:47,475 INFO  indexer.IndexerMapReduce - IndexerMapReduce: linkdb: crawl-20131107132202/linkdb
+2013-11-07 13:22:47,475 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: file:/Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/crawl-20131107132202/segments/20131107132208
+2013-11-07 13:22:47,487 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:47,493 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:47,701 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:47,703 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:47,703 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,057 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,057 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,057 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,369 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,369 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,369 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,432 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,432 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,432 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,492 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,492 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,492 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,550 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,550 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,550 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,574 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.basic.BasicIndexingFilter
+2013-11-07 13:22:48,575 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2013-11-07 13:22:48,575 INFO  indexer.IndexingFilters - Adding org.apache.nutch.indexer.anchor.AnchorIndexingFilter
+2013-11-07 13:22:48,600 INFO  solr.SolrMappingReader - source: content dest: content
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: title dest: title
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: host dest: host
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: segment dest: segment
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: boost dest: boost
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: digest dest: digest
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: tstamp dest: tstamp
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: url dest: id
+2013-11-07 13:22:48,601 INFO  solr.SolrMappingReader - source: url dest: url
+2013-11-07 13:22:48,694 INFO  solr.SolrIndexer - SolrIndexer: finished at 2013-11-07 13:22:48, elapsed: 00:00:01
+2013-11-07 13:22:48,695 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: starting at 2013-11-07 13:22:48
+2013-11-07 13:22:48,695 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: Solr url: http://localhost:8983/solr/
+2013-11-07 13:22:48,718 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 13:22:48,724 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 13:22:49,844 INFO  solr.SolrDeleteDuplicates - SolrDeleteDuplicates: finished at 2013-11-07 13:22:49, elapsed: 00:00:01
+2013-11-07 13:22:49,844 INFO  crawl.Crawl - crawl finished: crawl-20131107132202
+2013-11-07 21:20:01,220 INFO  crawl.Crawl - crawl started in: crawl-20131107212000
+2013-11-07 21:20:01,221 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 21:20:01,221 INFO  crawl.Crawl - threads = 10
+2013-11-07 21:20:01,221 INFO  crawl.Crawl - depth = 10
+2013-11-07 21:20:01,221 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 21:20:01,221 INFO  crawl.Crawl - topN = 50
+2013-11-07 21:20:01,232 INFO  crawl.Injector - Injector: starting at 2013-11-07 21:20:01
+2013-11-07 21:20:01,232 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107212000/crawldb
+2013-11-07 21:20:01,232 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 21:20:01,233 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 21:20:01,269 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 21:20:01,324 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 21:20:01,355 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:01,365 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:01,920 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 21:20:02,023 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 21:20:02,024 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 21:20:02,067 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 21:20:02,818 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 21:20:02,832 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:02,838 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:04,038 INFO  crawl.Injector - Injector: finished at 2013-11-07 21:20:04, elapsed: 00:00:02
+2013-11-07 21:20:04,048 INFO  crawl.Generator - Generator: starting at 2013-11-07 21:20:04
+2013-11-07 21:20:04,048 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 21:20:04,048 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 21:20:04,048 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 21:20:04,048 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 21:20:04,050 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 21:20:04,050 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 21:20:04,063 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:04,069 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:04,282 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:04,282 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:04,282 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:04,312 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:04,312 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:04,312 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:04,314 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 21:20:05,209 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 21:20:06,211 INFO  crawl.Generator - Generator: segment: crawl-20131107212000/segments/20131107212006
+2013-11-07 21:20:06,222 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:06,226 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:07,329 INFO  crawl.Generator - Generator: finished at 2013-11-07 21:20:07, elapsed: 00:00:03
+2013-11-07 21:20:07,330 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 21:20:07,330 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 21:20:07
+2013-11-07 21:20:07,330 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107212000/segments/20131107212006
+2013-11-07 21:20:07,339 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:07,344 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:07,491 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,491 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 21:20:07,491 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 21:20:07,496 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 21:20:07,506 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,506 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,507 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 21:20:07,507 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,507 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,507 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,507 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,508 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,509 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,509 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,524 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,524 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,524 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,525 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:07,525 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 21:20:07,525 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:07,525 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 21:20:07,525 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 21:20:07,530 INFO  http.Http - http.proxy.host = null
+2013-11-07 21:20:07,530 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 21:20:07,530 INFO  http.Http - http.timeout = 10000
+2013-11-07 21:20:07,530 INFO  http.Http - http.content.limit = 65536
+2013-11-07 21:20:07,530 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 21:20:07,530 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 21:20:07,530 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 21:20:08,528 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:09,529 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:10,530 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:10,562 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 21:20:11,532 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:11,532 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 21:20:12,436 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 21:20:12, elapsed: 00:00:05
+2013-11-07 21:20:12,437 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 21:20:12
+2013-11-07 21:20:12,437 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107212000/segments/20131107212006
+2013-11-07 21:20:12,447 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:12,451 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:12,894 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 21:20:12,901 INFO  parse.ParseSegment - Parsed (9ms):http://www.everytrail.com/
+2013-11-07 21:20:12,978 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2013-11-07 21:20:13,549 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 21:20:13, elapsed: 00:00:01
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 21:20:13
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107212000/crawldb
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107212000/segments/20131107212006]
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 21:20:13,558 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 21:20:13,559 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 21:20:13,567 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:13,572 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:13,735 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:13,818 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:14,059 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:14,074 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:14,074 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:14,074 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:14,687 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 21:20:14, elapsed: 00:00:01
+2013-11-07 21:20:14,694 INFO  crawl.Generator - Generator: starting at 2013-11-07 21:20:14
+2013-11-07 21:20:14,694 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 21:20:14,695 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 21:20:14,695 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 21:20:14,695 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 21:20:14,695 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 21:20:14,703 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:14,708 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:14,893 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:14,894 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:14,894 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:14,943 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:14,944 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:14,944 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:14,944 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 21:20:15,821 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 21:20:16,821 INFO  crawl.Generator - Generator: segment: crawl-20131107212000/segments/20131107212016
+2013-11-07 21:20:16,831 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:16,837 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:17,915 INFO  crawl.Generator - Generator: finished at 2013-11-07 21:20:17, elapsed: 00:00:03
+2013-11-07 21:20:17,915 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 21:20:17,915 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 21:20:17
+2013-11-07 21:20:17,915 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107212000/segments/20131107212016
+2013-11-07 21:20:17,924 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:17,929 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:18,085 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,085 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 21:20:18,085 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 21:20:18,091 INFO  fetcher.Fetcher - QueueFeeder finished: total 50 records + hit by time limit :0
+2013-11-07 21:20:18,091 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,092 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/create_trip.php
+2013-11-07 21:20:18,092 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,092 INFO  http.Http - http.proxy.host = null
+2013-11-07 21:20:18,092 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 21:20:18,092 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,092 INFO  http.Http - http.timeout = 10000
+2013-11-07 21:20:18,092 INFO  http.Http - http.content.limit = 65536
+2013-11-07 21:20:18,092 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 21:20:18,092 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 21:20:18,092 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 21:20:18,093 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,093 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,093 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,093 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,094 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,094 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,094 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:18,094 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 21:20:18,094 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 21:20:19,096 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=49
+2013-11-07 21:20:19,125 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2013-11-07 21:20:20,097 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:21,097 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:22,098 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:23,100 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:24,101 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:24,202 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/five-lakes-granite-chief-wilderness-lake-tahoe
+2013-11-07 21:20:25,103 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=48
+2013-11-07 21:20:28,976 INFO  crawl.Crawl - crawl started in: crawl-20131107212028
+2013-11-07 21:20:28,977 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 21:20:28,977 INFO  crawl.Crawl - threads = 10
+2013-11-07 21:20:28,977 INFO  crawl.Crawl - depth = 10
+2013-11-07 21:20:28,977 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 21:20:28,977 INFO  crawl.Crawl - topN = 50
+2013-11-07 21:20:28,990 INFO  crawl.Injector - Injector: starting at 2013-11-07 21:20:28
+2013-11-07 21:20:28,990 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107212028/crawldb
+2013-11-07 21:20:28,990 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 21:20:28,990 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 21:20:29,036 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 21:20:29,121 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 21:20:29,146 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:29,156 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:29,818 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 21:20:29,940 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 21:20:29,940 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 21:20:29,940 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 21:20:29,940 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 21:20:29,941 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 21:20:29,998 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 21:20:30,698 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 21:20:30,715 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:30,724 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:31,935 INFO  crawl.Injector - Injector: finished at 2013-11-07 21:20:31, elapsed: 00:00:02
+2013-11-07 21:20:31,948 INFO  crawl.Generator - Generator: starting at 2013-11-07 21:20:31
+2013-11-07 21:20:31,948 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 21:20:31,948 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 21:20:31,948 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 21:20:31,948 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 21:20:31,950 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 21:20:31,950 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 21:20:31,966 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:31,972 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:32,241 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:32,242 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:32,242 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:32,281 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:32,282 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:32,282 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:32,285 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 21:20:33,158 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 21:20:34,159 INFO  crawl.Generator - Generator: segment: crawl-20131107212028/segments/20131107212034
+2013-11-07 21:20:34,172 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:34,180 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:35,338 INFO  crawl.Generator - Generator: finished at 2013-11-07 21:20:35, elapsed: 00:00:03
+2013-11-07 21:20:35,338 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 21:20:35,339 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 21:20:35
+2013-11-07 21:20:35,339 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107212028/segments/20131107212034
+2013-11-07 21:20:35,350 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:35,356 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:35,592 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,593 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 21:20:35,593 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 21:20:35,602 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 21:20:35,616 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,617 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,618 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,619 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 21:20:35,622 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,626 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,626 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,627 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,627 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,661 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=2
+2013-11-07 21:20:35,662 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,663 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,664 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,665 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,666 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,668 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,669 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,670 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,669 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:35,672 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 21:20:35,672 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 21:20:35,672 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 21:20:35,674 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:20:35,680 INFO  http.Http - http.proxy.host = null
+2013-11-07 21:20:35,680 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 21:20:35,680 INFO  http.Http - http.timeout = 10000
+2013-11-07 21:20:35,680 INFO  http.Http - http.content.limit = 65536
+2013-11-07 21:20:35,680 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 21:20:35,680 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 21:20:35,680 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 21:20:36,675 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:37,558 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 21:20:37,676 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:20:37,676 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 21:20:38,491 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 21:20:38, elapsed: 00:00:03
+2013-11-07 21:20:38,492 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 21:20:38
+2013-11-07 21:20:38,492 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107212028/segments/20131107212034
+2013-11-07 21:20:38,501 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:38,507 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:39,067 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2013-11-07 21:20:39,077 INFO  parse.ParseSegment - Parsed (14ms):http://www.everytrail.com/
+2013-11-07 21:20:39,225 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2013-11-07 21:20:39,618 INFO  parse.ParseSegment - ParseSegment: finished at 2013-11-07 21:20:39, elapsed: 00:00:01
+2013-11-07 21:20:39,629 INFO  crawl.CrawlDb - CrawlDb update: starting at 2013-11-07 21:20:39
+2013-11-07 21:20:39,629 INFO  crawl.CrawlDb - CrawlDb update: db: crawl-20131107212028/crawldb
+2013-11-07 21:20:39,629 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl-20131107212028/segments/20131107212034]
+2013-11-07 21:20:39,629 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2013-11-07 21:20:39,629 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: true
+2013-11-07 21:20:39,630 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: true
+2013-11-07 21:20:39,630 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2013-11-07 21:20:39,631 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2013-11-07 21:20:39,641 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:39,647 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:39,860 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:39,989 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:40,081 INFO  regex.RegexURLNormalizer - can't find rules for scope 'crawldb', using default
+2013-11-07 21:20:40,100 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:40,101 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:40,101 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:40,792 INFO  crawl.CrawlDb - CrawlDb update: finished at 2013-11-07 21:20:40, elapsed: 00:00:01
+2013-11-07 21:20:40,804 INFO  crawl.Generator - Generator: starting at 2013-11-07 21:20:40
+2013-11-07 21:20:40,804 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 21:20:40,804 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 21:20:40,804 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 21:20:40,804 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 21:20:40,806 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 21:20:40,818 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:40,827 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:41,007 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:41,008 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:41,008 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:41,051 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:20:41,051 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:20:41,051 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:20:41,052 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 21:20:41,945 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 21:20:42,945 INFO  crawl.Generator - Generator: segment: crawl-20131107212028/segments/20131107212042
+2013-11-07 21:20:42,952 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:42,957 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:44,050 INFO  crawl.Generator - Generator: finished at 2013-11-07 21:20:44, elapsed: 00:00:03
+2013-11-07 21:20:44,050 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 21:20:44,050 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 21:20:44
+2013-11-07 21:20:44,050 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107212028/segments/20131107212042
+2013-11-07 21:20:44,059 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:20:44,065 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:20:44,391 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,396 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 21:20:44,398 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 21:20:44,479 INFO  fetcher.Fetcher - QueueFeeder finished: total 50 records + hit by time limit :0
+2013-11-07 21:20:44,482 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,483 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,483 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/create_trip.php
+2013-11-07 21:20:44,483 INFO  http.Http - http.proxy.host = null
+2013-11-07 21:20:44,484 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 21:20:44,484 INFO  http.Http - http.timeout = 10000
+2013-11-07 21:20:44,484 INFO  http.Http - http.content.limit = 65536
+2013-11-07 21:20:44,484 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 21:20:44,484 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 21:20:44,484 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 21:20:44,484 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,484 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,485 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,486 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,486 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,487 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,488 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,489 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:20:44,490 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 21:20:44,490 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 21:20:45,329 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2013-11-07 21:20:45,491 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:46,492 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:47,492 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:48,493 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:49,494 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=49
+2013-11-07 21:20:50,397 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/guide/five-lakes-granite-chief-wilderness-lake-tahoe
+2013-11-07 21:20:50,495 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=48
+2013-11-07 21:20:51,496 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=48
+2013-11-07 21:20:52,497 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 21:20:53,499 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 21:20:54,500 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 21:20:55,501 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 21:20:56,503 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=48
+2013-11-07 21:20:57,267 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/destination/kings-canyon-national-park
+2013-11-07 21:20:57,504 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=47
+2013-11-07 21:20:58,505 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=47
+2013-11-07 21:20:59,506 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 21:21:00,507 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 21:21:01,508 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=47
+2013-11-07 21:26:41,827 INFO  crawl.Crawl - crawl started in: crawl-20131107212641
+2013-11-07 21:26:41,828 INFO  crawl.Crawl - rootUrlDir = urls
+2013-11-07 21:26:41,828 INFO  crawl.Crawl - threads = 10
+2013-11-07 21:26:41,828 INFO  crawl.Crawl - depth = 10
+2013-11-07 21:26:41,828 INFO  crawl.Crawl - solrUrl=http://localhost:8983/solr/
+2013-11-07 21:26:41,828 INFO  crawl.Crawl - topN = 50
+2013-11-07 21:26:41,846 INFO  crawl.Injector - Injector: starting at 2013-11-07 21:26:41
+2013-11-07 21:26:41,846 INFO  crawl.Injector - Injector: crawlDb: crawl-20131107212641/crawldb
+2013-11-07 21:26:41,846 INFO  crawl.Injector - Injector: urlDir: urls
+2013-11-07 21:26:41,846 WARN  conf.Configuration - mapred.temp.dir is deprecated. Instead, use mapreduce.cluster.temp.dir
+2013-11-07 21:26:41,884 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2013-11-07 21:26:41,967 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2013-11-07 21:26:41,992 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:42,002 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:26:42,652 INFO  plugin.PluginRepository - Plugins: looking in: /Users/KwangsoonJung/Desktop/nutch/apache-nutch-1.5-src/runtime/local/plugins
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - Plugin Auto-activation mode: [true]
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - Registered Plugins:
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	the nutch core extension points (nutch-extensionpoints)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Regex URL Normalizer (urlnormalizer-regex)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	CyberNeko HTML Parser (lib-nekohtml)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	OPIC Scoring Plug-in (scoring-opic)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Basic URL Normalizer (urlnormalizer-basic)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Tika Parser Plug-in (parse-tika)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Basic Indexing Filter (index-basic)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Html Parse Plug-in (parse-html)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Anchor Indexing Filter (index-anchor)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	HTTP Framework (lib-http)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Regex URL Filter (urlfilter-regex)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Regex URL Filter Framework (lib-regex-filter)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Pass-through URL Normalizer (urlnormalizer-pass)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Http Protocol Plug-in (protocol-http)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - Registered Extension-Points:
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Nutch URL Normalizer (org.apache.nutch.net.URLNormalizer)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Nutch Protocol (org.apache.nutch.protocol.Protocol)
+2013-11-07 21:26:42,742 INFO  plugin.PluginRepository - 	Nutch Segment Merge Filter (org.apache.nutch.segment.SegmentMergeFilter)
+2013-11-07 21:26:42,743 INFO  plugin.PluginRepository - 	Nutch URL Filter (org.apache.nutch.net.URLFilter)
+2013-11-07 21:26:42,743 INFO  plugin.PluginRepository - 	Nutch Indexing Filter (org.apache.nutch.indexer.IndexingFilter)
+2013-11-07 21:26:42,743 INFO  plugin.PluginRepository - 	HTML Parse Filter (org.apache.nutch.parse.HtmlParseFilter)
+2013-11-07 21:26:42,743 INFO  plugin.PluginRepository - 	Nutch Content Parser (org.apache.nutch.parse.Parser)
+2013-11-07 21:26:42,743 INFO  plugin.PluginRepository - 	Nutch Scoring (org.apache.nutch.scoring.ScoringFilter)
+2013-11-07 21:26:42,788 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2013-11-07 21:26:43,538 INFO  crawl.Injector - Injector: Merging injected urls into crawl db.
+2013-11-07 21:26:43,550 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:43,556 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:26:44,799 INFO  crawl.Injector - Injector: finished at 2013-11-07 21:26:44, elapsed: 00:00:02
+2013-11-07 21:26:44,810 INFO  crawl.Generator - Generator: starting at 2013-11-07 21:26:44
+2013-11-07 21:26:44,810 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2013-11-07 21:26:44,810 INFO  crawl.Generator - Generator: filtering: true
+2013-11-07 21:26:44,810 INFO  crawl.Generator - Generator: normalizing: true
+2013-11-07 21:26:44,810 INFO  crawl.Generator - Generator: topN: 50
+2013-11-07 21:26:44,812 WARN  conf.Configuration - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2013-11-07 21:26:44,812 INFO  crawl.Generator - Generator: jobtracker is 'local', generating exactly one partition.
+2013-11-07 21:26:44,828 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:44,834 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:26:45,075 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:26:45,076 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:26:45,076 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:26:45,111 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2013-11-07 21:26:45,111 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2013-11-07 21:26:45,111 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2013-11-07 21:26:45,116 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2013-11-07 21:26:45,990 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2013-11-07 21:26:46,992 INFO  crawl.Generator - Generator: segment: crawl-20131107212641/segments/20131107212646
+2013-11-07 21:26:47,004 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:47,012 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:26:48,160 INFO  crawl.Generator - Generator: finished at 2013-11-07 21:26:48, elapsed: 00:00:03
+2013-11-07 21:26:48,160 WARN  fetcher.Fetcher - Fetcher: Your 'http.agent.name' value should be listed first in 'http.robots.agents' property.
+2013-11-07 21:26:48,160 INFO  fetcher.Fetcher - Fetcher: starting at 2013-11-07 21:26:48
+2013-11-07 21:26:48,161 INFO  fetcher.Fetcher - Fetcher: segment: crawl-20131107212641/segments/20131107212646
+2013-11-07 21:26:48,172 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:48,178 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2013-11-07 21:26:48,370 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,371 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2013-11-07 21:26:48,371 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2013-11-07 21:26:48,375 INFO  fetcher.Fetcher - QueueFeeder finished: total 1 records + hit by time limit :0
+2013-11-07 21:26:48,389 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,389 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,391 INFO  fetcher.Fetcher - fetching http://www.everytrail.com/
+2013-11-07 21:26:48,391 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,391 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,393 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,394 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,395 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,410 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,412 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,414 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,414 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,414 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,415 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,415 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,415 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,415 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,416 INFO  fetcher.Fetcher - Using queue mode : byHost
+2013-11-07 21:26:48,417 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,417 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=1
+2013-11-07 21:26:48,418 WARN  conf.Configuration - mapred.task.timeout is deprecated. Instead, use mapreduce.task.timeout
+2013-11-07 21:26:48,418 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2013-11-07 21:26:48,418 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2013-11-07 21:26:48,424 INFO  http.Http - http.proxy.host = null
+2013-11-07 21:26:48,424 INFO  http.Http - http.proxy.port = 8080
+2013-11-07 21:26:48,424 INFO  http.Http - http.timeout = 10000
+2013-11-07 21:26:48,424 INFO  http.Http - http.content.limit = 65536
+2013-11-07 21:26:48,424 INFO  http.Http - http.agent = My Nutch Spider/Nutch-1.5
+2013-11-07 21:26:48,424 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2013-11-07 21:26:48,424 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2013-11-07 21:26:49,421 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:26:50,422 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:26:50,792 INFO  fetcher.Fetcher - -finishing thread FetcherThread, activeThreads=0
+2013-11-07 21:26:51,423 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0
+2013-11-07 21:26:51,423 INFO  fetcher.Fetcher - -activeThreads=0
+2013-11-07 21:26:52,297 INFO  fetcher.Fetcher - Fetcher: finished at 2013-11-07 21:26:52, elapsed: 00:00:04
+2013-11-07 21:26:52,298 INFO  parse.ParseSegment - ParseSegment: starting at 2013-11-07 21:26:52
+2013-11-07 21:26:52,298 INFO  parse.ParseSegment - ParseSegment: segment: crawl-20131107212641/segments/20131107212646
+2013-11-07 21:26:52,307 WARN  conf.Configuration - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2013-11-07 21:26:52,312 WARN  mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
