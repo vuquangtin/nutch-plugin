@@ -19,23 +19,34 @@ package org.apache.nutch.indexer.basic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.apache.nutch.metadata.Nutch;
 import org.apache.nutch.parse.Parse;
-
 import org.apache.nutch.indexer.IndexingFilter;
 import org.apache.nutch.indexer.IndexingException;
 import org.apache.nutch.indexer.NutchDocument;
 import org.apache.hadoop.io.Text;
-
 import org.apache.nutch.crawl.CrawlDatum;
 import org.apache.nutch.crawl.Inlinks;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.Date;
 
 import org.apache.hadoop.conf.Configuration;
+
+// modified
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 
 /** Adds basic searchable fields to a document. */
 public class BasicIndexingFilter implements IndexingFilter {
@@ -98,6 +109,36 @@ public class BasicIndexingFilter implements IndexingFilter {
     // add timestamp when fetched, for deduplication
     doc.add("tstamp", new Date(datum.getFetchTime()));
 
+    // modified
+    String poiContent = "";
+    
+    HttpClient	httpClient	= new DefaultHttpClient();
+	HttpGet httpGet = null;
+	try {
+		httpGet = new HttpGet("http://localhost:8111/poiextract?infile=" + URLEncoder.encode(content, "UTF-8"));
+		httpGet.addHeader("accept", "application/json");
+	
+		System.out.println("Start!");
+		HttpResponse	httpResponse	= httpClient.execute(httpGet);
+		HttpEntity	entity	=  httpResponse.getEntity();
+		if (entity != null){
+			BufferedReader br = new BufferedReader( new InputStreamReader(entity.getContent()));
+			String output;
+			while ((output = br.readLine()) != null) {
+				System.out.println(output);
+				poiContent += output;
+			}
+		}
+	} catch (ClientProtocolException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+    System.out.println(poiContent);
+    doc.add("poiExtraction", poiContent);
+    
     return doc;
   }
 

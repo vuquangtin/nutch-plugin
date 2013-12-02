@@ -32,6 +32,7 @@
          -->
 	<fields>
 		<field dest="pageLength" source="pageLength"/>
+		<field dest="poiExtraction" source="poiExtraction"/>
 		
 		<field dest="content" source="content"/>
 		<field dest="title" source="title"/>
